@@ -9,24 +9,24 @@ public class Experiment02 {
         System.out.println("Enter second number: ");
         String num2=sc.nextLine();
         
+        //wrapper class
         Double number1=Double.valueOf(num1);
         Double number2=Double.valueOf(num2);
 
         double add=number1 + number2;
         double sub=number1 - number2;
         double mult=number1 * number2;
-        double div=(number2 != 0) ? (number1/number2):null;
 
         System.out.println("Results:");
         System.out.println("Addition: " + add);
         System.out.println("Subtraction: " + sub);
         System.out.println("Multiplication: " + mult);
+        
         if (number2 != 0) {
+            double div = number1 / number2;
             System.out.println("Division: " + div);
         } else {
             System.out.println("Division: Cannot divide by zero.");
         }
     }
 }
-
-
